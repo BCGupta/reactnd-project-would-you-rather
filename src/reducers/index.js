@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import authUser from '../reducers/authUser';
+import authUser from '../reducers/userAuthorization';
 import questions from '../reducers/questions';
 import users from '../reducers/users';
 
