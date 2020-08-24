@@ -1,7 +1,14 @@
 import { saveQuestionAnswer } from '../utils/api';
 import { addAnswerToQuestion } from '../actions/questions';
 
-export const ADD_ANSWER_TO_USER = 'ADD_ANSWER_TO_USER';
+export function receiveUsers(users) {
+    return {
+        type: RECEIVE_USERS,
+        users
+    };
+}
+
+export const RECEIVE_USERS = 'RECEIVE_USERS';
 
 function addAnswerToUser(authUser, qid, answer) {
     return {
@@ -11,6 +18,8 @@ function addAnswerToUser(authUser, qid, answer) {
         answer
     };
 }
+
+export const ADD_ANSWER_TO_USER = 'ADD_ANSWER_TO_USER';
 
 export function handleSaveQuestionAnswer(authUser, qid, answer) {
     return dispatch => {
@@ -23,11 +32,12 @@ export function handleSaveQuestionAnswer(authUser, qid, answer) {
     };
 }
 
-export const RECEIVE_USERS = 'RECEIVE_USERS';
-
-export function receiveUsers(users) {
+export function addQuestionToUser({ id, author }) {
     return {
-        type: RECEIVE_USERS,
-        users
+        type: ADD_QUESTION_TO_USER,
+        id,
+        author
     };
 }
+
+export const ADD_QUESTION_TO_USER = 'ADD_QUESTION_TO_USER';
