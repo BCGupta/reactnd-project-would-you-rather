@@ -1,4 +1,4 @@
-import { saveQuestionAnswer } from '../utils/api';
+import { saveQuestionAnswer } from '../utils/projectAPI';
 import { addAnswerToQuestion } from '../actions/questions';
 
 export function receiveUsers(users) {

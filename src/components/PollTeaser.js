@@ -1,10 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import { Redirect } from 'react-router-dom';
-import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
 import { Header, Button } from 'semantic-ui-react';
-import { colors } from '../utils/helpers';
+import { colors } from '../utils/helper';
 
 export class PollTeaser extends Component {
     static propTypes = {

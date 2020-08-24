@@ -1,4 +1,4 @@
-import { saveQuestion } from '../utils/api';
+import { saveQuestion } from '../utils/projectAPI';
 import { addQuestionToUser } from '../actions/users';
 
 export const RECEIVE_QUESTIONS = 'RECEIVE_QUESTIONS';

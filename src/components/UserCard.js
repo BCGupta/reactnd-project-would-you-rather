@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { Segment, Header, Grid, Image } from 'semantic-ui-react';
 import PollQuestion from './PollQuestion';
-import PollResult from './PollResult';
+import PollResult from './PollResults';
 import PollTeaser from './PollTeaser';
-import { colors } from '../utils/helpers';
+import { colors } from '../utils/helper';
 
 const pollTypes = {
     POLL_TEASER: 'POLL_TEASER',

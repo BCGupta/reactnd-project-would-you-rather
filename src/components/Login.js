@@ -23,11 +23,6 @@ export class Login extends Component {
                         loading={this.state.loading}
                     />
                 </Segment.Group>
-                <footer className="footer">
-                    <a href="https://www.freepik.com/free-photos-vectors/design">
-                        Avatar characters created by freepik - www.freepik.com
-                    </a>
-                </footer>
             </Fragment>
         );
     }
